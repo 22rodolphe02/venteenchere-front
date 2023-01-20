@@ -1,8 +1,6 @@
 import Brand from "../Brand";
-import ReactLoading from "react-loading";
 import {useEffect, useState} from "react";
 import {listCategory} from "../../services/CategoryService";
-import {api} from "../../utils/api";
 
 export default function ListCategories(){
     const [data, setData] = useState(null);

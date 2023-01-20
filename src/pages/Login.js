@@ -1,16 +1,14 @@
 import { useForm} from 'react-hook-form'
-import {useState} from "react";
-import {login, loginAdmin} from "../services/LoginService";
+import {loginAdmin} from "../services/LoginService";
 
 
 
 
 export default function Login(){
     const { handleSubmit, register} = useForm();
-    const [isAdmin, setAdmin] = useState(false);
 
     async function submit(data) {
-        localStorage.setItem("token", (await loginAdmin(data)))
+        localStorage.setItem("token", (await loginAdmin(data)));
         window.location.href = "/list-categories"
     }
 
@@ -44,13 +42,6 @@ export default function Login(){
                                             </div>
                                         </div>
                                         <div className="col-12">
-                                            {/*<div
-                                                className="form-agreement form-inner d-flex justify-content-between flex-wrap">
-                                                <div className="form-group">
-                                                    <input type="checkbox" {...register('isAdmin')} id="html" onInput={(e) => setAdmin(!isAdmin)}/>
-                                                    <label htmlFor="html">Admin</label>
-                                                </div>
-                                            </div>*/}
                                         </div>
                                     </div>
                                     <button className="account-btn" type="submit">Log in</button>

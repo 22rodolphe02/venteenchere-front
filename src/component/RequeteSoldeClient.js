@@ -1,18 +1,9 @@
 import Brand from "./Brand";
-import {listCategory} from "../services/CategoryService";
-import ReactLoading from "react-loading";
 import {useEffect, useState} from "react";
 import {listRequestNonValid, updateNonValid} from "../services/SoldeService";
 
 export default function RequeteSoldeClient(){
     const [data, setData] = useState(null);
-    function getSolde(id){
-        console.log("id: " + id)
-        data.find(el => {
-            console.log(el.id)
-            // console.log(el.id.isEqual(id))
-        })
-    }
 
     useEffect( () => {
             if (!localStorage.getItem("token")){

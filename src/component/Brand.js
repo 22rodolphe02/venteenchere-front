@@ -1,4 +1,4 @@
-import headerPhone from "../assets/images/icons/header-phone.svg";
+
 export default function Brand(){
     return(
         <>
@@ -27,9 +27,6 @@ export default function Brand(){
                         </div>
                     </div>
                     <ul className="menu-list">
-                        {/*<li >*/}
-                        {/*    <a href="/statistique" >Statistique</a>*/}
-                        {/*</li>*/}
                         <li className="menu-item-has-children">
                             <a href="">Categories</a><i className='bx bx-plus dropdown-icon'></i>
                             <ul className="submenu">
@@ -41,7 +38,6 @@ export default function Brand(){
                             <a href="#" className="drop-down">Actions</a><i className='bx bx-plus dropdown-icon'></i>
                             <ul className="submenu">
                                 <li><a href="/requete-solde-client">Requete solde client</a></li>
-                                {/*<li><a href="/enchere">Encheres</a></li>*/}
                             </ul>
                         </li>
                     </ul>

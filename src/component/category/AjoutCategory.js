@@ -1,6 +1,5 @@
 import Brand from "../../component/Brand";
 import {useForm} from "react-hook-form";
-import {login} from "../../services/LoginService";
 import {addCategory} from "../../services/CategoryService";
 import {toast} from "react-toastify";
 import {useEffect} from "react";
@@ -8,7 +7,7 @@ import {useEffect} from "react";
 
 
 export default function AjoutCategory(){
-    const { handleSubmit, register} = useForm();
+    const { handleSubmit} = useForm();
 
     useEffect(() => {
         if (!localStorage.getItem("token")){
