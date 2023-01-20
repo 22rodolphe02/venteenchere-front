@@ -12,7 +12,6 @@ export default function Statistique(){
             let donne = {}
             donne.enchere = await getRecordEnchere();
             donne.categories = await getCategoriesOrderByClassement()
-
             setData(donne);
         }
 
