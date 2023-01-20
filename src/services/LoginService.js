@@ -5,7 +5,7 @@ export async function loginClient(data){
 }
 
 export async function loginAdmin(data){
-    return (await api.post("api/projetEnchere/admin", data)).data;
+    return (await api.post("api/projetEnchere/admin", data)).data
 }
 
 export async function login(data){
