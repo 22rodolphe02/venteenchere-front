@@ -27,6 +27,7 @@ export default function Brand(){
                         </div>
                     </div>
                     <ul className="menu-list">
+                        <li ><a href="/statistique" >Statistique</a></li>
                         <li className="menu-item-has-children">
                             <a href="">Categories</a><i className='bx bx-plus dropdown-icon'></i>
                             <ul className="submenu">

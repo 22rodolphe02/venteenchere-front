@@ -16,10 +16,8 @@ import "./assets/css/magnific-popup.css"
 import "./assets/css/odometer.css"
 import "./assets/css/style.css"
 import RequestSoldeClient from "./component/RequeteSoldeClient";
-import ListEnchere from "./component/enchere/ListEnchere";
 import AjoutCategory from "./component/category/AjoutCategory";
 import Statistique from "./component/stat/Statistique";
-import Enchere from "./component/Enchere";
 import ListCategories from "./component/category/ListCategories";
 
 class App extends React.Component {

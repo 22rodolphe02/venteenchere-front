@@ -46,7 +46,7 @@ export default function ListCategories(){
                                     <tbody>
                                     {data.map((res) =>
                                         <tr key={res.id}>
-                                            <td data-label="Bidding ID">1</td>
+                                            <td data-label="Bidding ID">{res.id}</td>
                                             <td data-label="Bid Amount(USD)" >{res.categorie}</td>
                                         </tr>
                                     )}
