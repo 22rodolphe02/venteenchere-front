@@ -7,7 +7,7 @@ import {useEffect} from "react";
 
 
 export default function AjoutCategory(){
-    const { handleSubmit} = useForm();
+    const {register, handleSubmit} = useForm();
 
     useEffect(() => {
         if (!localStorage.getItem("token")){
@@ -17,7 +17,8 @@ export default function AjoutCategory(){
     // toast.configure();
     function submit(data){
         addCategory(data).then(r => {
-                toast('ajout reussi')
+            console.log("ajout reussi")
+            // toast('ajout reussi')
         });
     }
 
@@ -38,7 +39,7 @@ export default function AjoutCategory(){
                                         <div className="col-12">
                                             <div className="form-inner">
                                                 <label>Nouveau categorie </label>
-                                                <input type="text" placeholder="Entrer ici le nouveau categorie"/>
+                                                <input type="text" {...register('categorie')} placeholder="Entrer le nom categorie"/>
                                             </div>
                                         </div>
                                     </div>
