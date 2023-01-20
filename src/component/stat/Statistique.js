@@ -1,7 +1,7 @@
 //  statistique par record enchere
 import Brand from "../Brand";
 import {useEffect, useState} from "react";
-import {getCategoriesOrderByClassement, getRecordAcheteur, getRecordEnchere} from "../../services/StatistiqueService";
+import {getCategoriesOrderByClassement, getRecordEnchere} from "../../services/StatistiqueService";
 
 export default function Statistique(){
     const [data, setData] = useState();
