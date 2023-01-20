@@ -14,8 +14,6 @@ export default function Statistique(){
             donne.categories = await getCategoriesOrderByClassement()
 
             setData(donne);
-
-            console.log(donne)
         }
 
         fetchData()
